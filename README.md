@@ -69,14 +69,10 @@ ________________________________________
 - **hashdump:** Extrae hashes de contraseñas.
 ________________________________________
 ## ❌ **Consejos adicionales**
-- Para verificar si el Windows XP es vulnerable:
-<pre> nmap -p 445 --script smb-vuln-ms08-067 <IP_víctima> </pre>
-- Verificar si el parche MS08-067 esta instalado:
-<pre> systeminfo | find "KB958644" </pre>
-- En caso de estar instalado usar el siguiente comando para desinstalarlo:
-<pre> wusa /uninstall /kb:958644 </pre>
-- Desactivar firewall de Windows:
-<pre> netsh firewall set opmode disable </pre>
+- **Para verificar si el Windows XP es vulnerable:** ```bash nmap -p 445 --script smb-vuln-ms08-067 <IP_víctima> ```
+- **Verificar si el parche MS08-067 esta instalado:** ```bash systeminfo | find "KB958644" ```
+- **En caso de estar instalado usar el siguiente comando para desinstalarlo:** ```bash wusa /uninstall /kb:958644 ```
+- **Desactivar firewall de Windows:** ```bash netsh firewall set opmode disable ```
 ________________________________________
 ## 📚 **Recursos**
 - [Exploit-DB: MS08-067](https://www.exploit-db.com/exploits/7104)
