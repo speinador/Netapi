@@ -9,7 +9,7 @@ Como estudiantes y profesionales de la ciberseguridad, debemos actuar siempre de
 ________________________________________
 
 Esta guía explica paso a paso cómo explotar la vulnerabilidad MS08-067 (netapi) usando Metasploit Framework. Solo debe usarse con fines educativos o en entornos de laboratorio controlado. Explotar sistemas sin permiso es ilegal.
-
+________________________________________
 ## 🛡️ **¿Qué es MS08-067?**
 - Vulnerabilidad crítica en el servicio Server (netapi32.dll) de Windows.
 - Permite ejecución remota de código sin autenticación.
