@@ -77,3 +77,14 @@ ________________________________________
 ## 📚 **Recursos**
 - [Exploit-DB: MS08-067](https://www.exploit-db.com/exploits/7104)
 - [Rapid7 Metasploit Docs](https://www.rapid7.com/blog/post/2014/02/03/new-ms08-067/)
+________________________________________
+## 🧑‍🏫 Autor
+
+Explicación elaborada por [Sebastian Peinador](https://www.linkedin.com/in/sebastian-j-peinador/) para propósitos didácticos y de investigación en ciberseguridad ofensiva.
+________________________________________
+## 📄 Licencia
+
+Este material se distribuye bajo la licencia [MIT](LICENSE).
+________________________________________
+
+> Si te resulta útil, ¡no olvides darle ⭐ al repo o compartirlo!
